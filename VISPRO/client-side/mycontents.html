@@ -1,0 +1,1333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Contents</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+  
+    <!-- Favicons -->
+    <link href="../assets/img/whiteLogo.png" rel="icon">
+    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  
+    <!-- Vendor CSS Files -->
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="../assets/vendor/quill/quill.snow.css" rel="stylesheet">
+    <link href="../assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+    <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="../assets/vendor/simple-datatables/style.css" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  
+    <!-- Template Main CSS File -->
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <link href="../assets/css/cl-style.css" rel="stylesheet">
+</head>
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="dashboard.html" class="logo d-flex align-items-center">
+        <img src="../assets/img/whiteLogo.png" alt="">
+        <span class="d-none d-lg-block">Vispro</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-bell"></i>
+            <span class="badge bg-black badge-number">0</span>
+          </a><!-- End Notification Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+            <li class="dropdown-header">
+              You have <span class="badge rounded-pill bg-primary p-2 ms-2">0</span> new notifications
+              <a href="notifications.html"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <!-- Notifications will be appended here -->
+          </ul><!-- End Notification Dropdown Items -->
+        </li><!-- End Notification Nav -->
+        
+        <li class="nav-item dropdown pe-3">
+
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+            <img src="../assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
+            <span class="d-none d-md-block dropdown-toggle ps-2"></span>
+          </a><!-- End Profile Iamge Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header">
+              <h6></h6>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-person"></i>
+                <span>My Profile</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="guidelines.html">
+                <i class="bi bi-question-circle"></i>
+                <span>Guidelines</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <i class="bi bi-box-arrow-right"></i>
+                <span>Sign Out</span>
+              </a>
+            </li>
+
+          </ul><!-- End Profile Dropdown Items -->
+        </li><!-- End Profile Nav -->
+
+      </ul>
+    </nav><!-- End Icons Navigation -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar" >
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item custom-card-hover" style="transition: all 0.3s;" >
+        <a class="nav-link collapsed" href="dashboard.html">
+          <i class="bi bi-grid"></i>
+          <span>Dashboard</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+
+      <li class="nav-item mt-3 custom-card-hover" style="transition: all 0.3s;">
+        <a class="nav-link" href="mycontents.html">
+          <i class="bi bi-collection"></i>
+          <span>My Contents</span>
+        </a>
+      </li><!-- End My Contents Nav -->
+      
+      <li class="nav-item mt-3 custom-card-hover" style="transition: all 0.3s;"></li>
+        <a class="nav-link collapsed" href="subscription.html">
+          <i class="bi bi-star"></i>
+          <span>Subscription</span>
+        </a>
+      </li><!-- End Subscription Nav -->
+
+      <li class="nav-item mt-3 custom-card-hover" style="transition: all 0.3s;"></li>
+        <a class="nav-link collapsed" href="payment.html">
+          <i class="bi bi-receipt"></i>
+          <span>Payment</span>
+        </a>
+      </li><!-- End Payment Nav -->
+
+      <li class="nav-item mt-3 custom-card-hover" style="transition: all 0.3s;"></li>
+        <a class="nav-link collapsed" href="notifications.html">
+          <i class="bi bi-bell"></i>
+          <span>Notifications</span>
+        </a>
+      </li><!-- End Notifications Nav -->
+
+      <li class="nav-heading mt-3">Personal</li>
+  
+        <li class="nav-item mt-3 custom-card-hover" style="transition: all 0.3s;">
+          <a class="nav-link collapsed" href="users-profile.html">
+            <i class="bi bi-person"></i>
+            <span>Account</span>
+          </a>
+        </li><!-- End Account Nav -->
+  
+        <li class="nav-item mt-3 custom-card-hover" style="transition: all 0.3s;">
+          <a class="nav-link collapsed" href="guidelines.html">
+            <i class="bi bi-question-circle"></i>
+            <span>Guidelines</span>
+          </a>
+        </li><!-- End Guidelines Nav -->
+
+        <li class="nav-item mt-3 custom-card-hover" style="transition: all 0.3s;"></li>
+          <a class="nav-link collapsed" href="contact.html">
+            <i class="bi bi-person"></i>
+            <span>Contact Us</span>
+          </a>
+        </li><!-- End Contact Nav -->
+
+        <li class="nav-item mt-3 custom-card-hover" style="transition: all 0.3s;">
+          <a class="nav-link collapsed" href="../index.html">
+            <i class="bi bi-box-arrow-right"></i>
+            <span>Log Out</span>
+          </a>
+        </li><!-- End Log Out Page Nav -->
+
+  </aside><!-- End Sidebar-->
+
+  <main id="main" class="main">
+        <div class="pagetitle">
+            <h1>My Contents</h1>
+            <nav>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="dashboard.html">Home</a></li>
+                    <li class="breadcrumb-item active">My Contents</li>
+                </ol>
+            </nav>
+        </div><!-- End Page Title -->
+
+
+        <div class="card">
+          <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Uploaded Contents</h5>
+      
+              <!-- Status Filter
+              <div class="d-flex align-items-center justify-content-end mb-3">
+                  <label for="statusFilter" class="form-label me-1 mb-0 text-size1">Filter by Status:</label>
+                  <select class="form-select form-select-sm w-auto text-size1" id="statusFilter">
+                      <option value="">All</option>
+                      <option value="Pending">Pending</option>
+                      <option value="Approved">Approved</option>
+                      <option value="Rejected">Rejected</option>
+                  </select>
+              </div> -->
+      
+              <!-- Uploaded Table Wrapper -->
+              <div class="custom-table-wrapper">
+                  <div class="table-responsive">
+                      <table class="table border-gray table-hover">
+                          <thead>
+                              <tr>
+                                  <th scope="col"></th>
+                                  <!-- <th scope="col"><input type="checkbox" id="selectAllCheckbox" title="checkbox"></th>  -->
+                                  <th scope="col"></th>
+                                  <th scope="col">File Name</th>
+                                  <th scope="col">File Type</th>
+                                  <th scope="col">Date Uploaded</th>
+                                  <th scope="col">Display Date</th>
+                                  <th scope="col">Display Time</th>
+                                  <!-- <th scope="col">Screen</th> -->
+                                  <th scope="col">Status</th>
+                              <th scope="col">Remarks</th>
+                              </tr>
+                          </thead>
+                          <tbody id="uploadedTableBody">
+                            <tr id="noEntriesMessage" style="display: none;">
+                              <td colspan="9" style="text-align: center; vertical-align: middle;">
+                                  <div>No uploads found</div>
+                              </td>
+                          </tr>
+                          </tbody>
+                      </table>
+                      <!-- Loading Spinner -->
+                      <div id="loadingSpinner" style="display: none; text-align: center;">
+                        <div class="spinner-border" role="status">
+                            <span class="sr-only"></span>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+      
+              <div class="mt-auto d-flex justify-content-end">
+                <button type="button" class="btn btn-sm btn-danger me-2" id="deleteBtn" title="Delete" disabled>
+                  <i class="bi bi-trash"></i> Delete
+                </button>
+                <button class="btn btn-sm btn-success" data-bs-toggle="modal" data-bs-target="#uploadModal" id="tableUpload" disabled>
+                  Upload
+                </button> 
+              </div>
+          </div>
+      </div>
+        
+      <!-- File Preview Modal -->
+      <div class="modal fade" id="filePreviewModal" tabindex="-1" aria-labelledby="filePreviewModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header custom-modal-header">
+              <h5 class="modal-title " id="filePreviewModalLabel">File Preview</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body ">
+              <!-- File will be loaded here -->
+              <div id="filePreviewContent" class="text-center">
+                <!-- File content will be injected here dynamically -->
+              </div>
+            </div>
+            <!-- <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Upload Modal -->
+      <div class="modal fade" id="uploadModal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="uploadModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header custom-modal-header">
+                        <h5 class="modal-title" id="uploadModalLabel">Upload Content</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row g-0">
+                            <!-- Left Section: Preview -->
+                            <div class="col-md-6 border-end d-flex flex-column align-items-center justify-content-center p-3">
+                                <div class="text-center w-100">
+                                    <p class="text-muted mb-3">File preview will be shown here</p>
+                                    <div class="d-flex justify-content-center w-100">
+                                        <div class="preview-container">
+                                            <img id="imagePreview" src="" alt="Image Preview" class="img-fluid d-none" />
+                                            <video id="videoPreview" class="w-100 d-none" controls>
+                                                <source id="videoSource" src="">
+                                                Your browser does not support the video tag.
+                                            </video>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Right Section: Upload Form -->
+                            <div class="col-md-6 p-3">
+                                <form id="uploadForm" novalidate>
+                                    <!-- Upload Image/Video -->
+                                    <div class="mb-3">
+                                        <label for="fileInput" class="form-label">Upload Image/Video</label>
+                                        <input type="file" class="form-control" id="fileInput" accept="image/*,video/*" onchange="previewFile()" required data-bs-toggle="tooltip" title="Upload a file">
+                                        <div class="invalid-feedback text-size2">Upload file: img/video file in landscape orientation.</div>
+                                        <div id="fileFeedback" class="invalid-feedback text-size2 d-none"></div>
+                                    </div>
+
+                                    <!-- Select Date -->
+                                    <div class="mb-3">
+                                        <label for="dateInput" class="form-label">Select Date</label>
+                                        <input type="date" class="form-control" id="dateInput" required data-bs-toggle="tooltip" title="Select date">
+                                        <div class="invalid-feedback text-size2">Select date: date passed are not accepted</div>
+                                    </div>
+
+
+                                    <!-- Select Start Time -->
+                                  <div class="mb-3 d-none" id="startTimeContainer">
+                                    <label for="timeInput" id="startTimeLabel" class="form-label">Start Time (h:m:s)</label>
+                                    <input type="time" class="form-control" id="timeInput" step="1" data-bs-toggle="tooltip" title="Select time">
+                                    <div class="invalid-feedback text-size2">Select the time of display.</div>
+                                  </div>
+
+
+                                    <!-- Select Start Time
+                                    <div class="mb-3">
+                                      <label for="timeInput" id="startTimeLabel" class="form-label">Start Time (HH:MM:SS AM/PM)</label>
+                                      <div class="d-flex align-items-center">
+                                          <input type="time" class="form-control" id="timeInput" step="1" required data-bs-toggle="tooltip" title="Select time">
+                                          
+                                          AM/PM selector -->
+                                          <!-- <select class="form-select ms-2" id="ampmInput" required>
+                                              <option value="AM">AM</option>
+                                              <option value="PM">PM</option>
+                                          </select>
+                                      </div>
+                                      <div class="invalid-feedback text-size2">Select the time of display.</div>
+                                    </div>
+
+                                     -->
+
+                                    <!-- Dropdown for Screen Location
+                                    <div class="mb-3">
+                                        <label for="screenLocation" class="form-label">Screen Location</label>
+                                        <select class="form-select" id="screenLocation" required data-bs-toggle="tooltip" title="Select screen">
+                                            <option value="" selected disabled>Choose location</option>
+                                            <option value="1">Screen 1</option>
+                                            <option value="2">Screen 2</option>
+                                            <option value="3">Screen 3</option>
+                                        </select>
+                                        <div class="invalid-feedback text-size2">Select screen</div>
+                                    </div> -->
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn custom-btn-primary" id="uploadBtn">
+                          <span id="uploadText">Okay</span>
+                        <span id="spinner" class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+                      </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Upload Success Modal -->
+        <div class="modal fade" id="successModal" tabindex="-1" data-bs-backdrop="static" aria-labelledby="successModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered ">
+              <div class="modal-content d-flex flex-column">
+                  <div class="modal-header custom-modal-header-sm">
+                      <h6 class="modal-title" id="successModalLabel" >File Uploaded Successfully</h6>
+                      <!-- <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button> -->
+                  </div>
+                  <div class="modal-body">
+                      <p>The file has been uploaded successfully.</p>
+                      <div class="mt-auto d-flex justify-content-end">
+                          <button type="button" class="btn btn-sm custom-btn-primary" data-bs-dismiss="modal" id="successBtn">Okay</button>
+                      </div>
+                  </div>
+                  
+              </div>
+          </div>
+      </div>
+
+      <!-- Delete Success Modal -->
+      <div class="modal fade" id="deletesuccessModal" tabindex="-1" data-bs-backdrop="static" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content d-flex flex-column">
+                <div class="modal-header custom-modal-header-sm">
+                    <h6 class="modal-title" id="deletesuccessModalLabel" >File Deletion</h6>
+                    <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>The file has been deleted successfully.</p>
+                    <div class="mt-auto d-flex justify-content-end">
+                        <button type="button" class="btn btn-sm custom-btn-primary" data-bs-dismiss="modal" id="deletesuccessBtn">Okay</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+      <!-- Error Modal -->
+      <div class="modal fade" id="errorModal" tabindex="-1" data-bs-backdrop="static" aria-labelledby="errorModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-sm">
+              <div class="modal-content d-flex flex-column">
+                  <div class="modal-header custom-modal-header-sm">
+                      <h5 class="modal-title" id="errorModalLabel" ><i class="bi bi-exclamation-triangle-fill text-warning"></i> Upload Error</h5>
+                      <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body text-size1">
+                      <p>Please make sure to upload an image.</p>
+                      <div class="mt-auto d-flex justify-content-end">
+                          <button type="button" class="btn btn-sm custom-btn-primary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                  </div>
+                  
+              </div>
+          </div>
+      </div>
+
+      <!-- Delete Confirmation Modal -->
+      <div class="modal fade" id="deleteModal" tabindex="-1" data-bs-backdrop="static" aria-labelledby="deleteModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+          <div class="modal-content d-flex flex-column">
+            <div class="modal-header custom-modal-header-sm">
+              <h5 class="modal-title" id="errorModalLabel"><i class="bi bi-exclamation-triangle-fill text-warning"></i> Delete</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Are you sure you want to delete this item?</p>
+              <div class="mt-auto d-flex justify-content-between">
+                <button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-sm btn-danger" data-bs-dismiss="modal" id="tableDelete">Delete</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        
+    </main>
+
+    
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span>VisPro</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      <!-- All the links in the footer should remain intact. -->
+      <!-- You can delete the links only if you purchased the pro version. -->
+      <!-- Licensing information: https://bootstrapmade.com/license/ -->
+      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
+      Developed by <a href="#">DS SYS</a>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="../assets/vendor/echarts/echarts.min.js"></script>
+  <script src="../assets/vendor/quill/quill.js"></script>
+  <script src="../assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="../assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-app.js";
+    import {getFirestore, doc, query, where, onSnapshot, collection, getDoc, setDoc, deleteDoc, updateDoc, getDocs } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-firestore.js";
+    import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-auth.js";
+    import { getStorage, ref, uploadBytes, getDownloadURL, deleteObject} from "https://www.gstatic.com/firebasejs/10.13.2/firebase-storage.js";
+
+    document.addEventListener("DOMContentLoaded", function () {
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyAn7_xxeQAhGoOeQ2a7loTMeqBhxu3MJcM",
+        authDomain: "vispro-9ef13.firebaseapp.com",
+        projectId: "vispro-9ef13",
+        storageBucket: "vispro-9ef13.appspot.com",
+        messagingSenderId: "693217615576",
+        appId: "1:693217615576:web:c90add91c2746f4c5b41ad",
+        measurementId: "G-WPYJ56HJ1S"
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const db = getFirestore(app);
+      const storage = getStorage(app); 
+      const auth = getAuth(app);
+
+      // Assuming you have the current user's ID stored after login
+      const userId = localStorage.getItem('userID');
+
+      let userRole = "";
+      
+      if (userId) {  // Check if userId is available
+        // Reference to the user's document in Firestore
+        const userDocRef = doc(db, "CLIENTS", userId);
+        const loadingSpinner = document.getElementById('loadingSpinner');
+        const noEntriesMessage = document.getElementById('noEntriesMessage');
+
+        // Function to check subscription and load user profile info
+        async function checkSubscription(userId) {
+          try {
+            loadingSpinner.style.display = 'block'; // Show spinner
+            const userDoc = await getDoc(userDocRef);
+
+            if (userDoc.exists()) {
+              const userData = userDoc.data();
+              console.log("User document found:", userData);
+
+              const firstName = userData.firstname;
+              const lastName = userData.lastname;
+              const middleInitial = userData.minit ? `${userData.minit}` : ""; // Middle initial, if available
+
+              // Construct abbreviated name
+              const abbreviatedName = `${firstName.charAt(0)}. ${lastName}`;
+              // Full name with middle initial (if available)
+              const fullName = `${firstName} ${middleInitial} ${lastName}`;
+
+              const myContentsLink = document.querySelector('a[href="mycontents.html"]');
+              const paymentLink = document.querySelector('a[href="payment.html"]');
+              const profileNameSpan = document.querySelector('.nav-profile .dropdown-toggle');  // Profile Name Display
+              const profileNameHeader = document.querySelector('.dropdown-header h6');  // Name in dropdown header
+
+               const startTimeContainer = document.getElementById('startTimeContainer'); //this is for the Starttime
+
+              // Display abbreviated name in the profile
+              profileNameSpan.textContent = abbreviatedName;
+
+              // Add an event listener to update the dropdown with the full name when clicked
+              const profileDropdown = document.querySelector('.nav-profile');
+              profileDropdown.addEventListener('click', function () {
+                profileNameHeader.textContent = fullName;  // Show full name in dropdown when opened
+              });
+
+              // Rest of the logic to handle subscription and links
+              const hasSubscription = userData.subscription && userData.subscription !== '';
+              const payStatus = userData.paystatus;
+             userRole = userData.userrole;
+
+              console.log("User role:", userRole, "Subscription status:", hasSubscription, "Payment status:", payStatus);
+
+              // Disable or enable menu items based on user role, subscription status, and payment status
+              if (userRole === "Business Client" || userRole === "Personal Client") {
+                  if (!hasSubscription || payStatus === "") {
+                      console.log("No subscription or empty paystatus found. Disabling 'My Contents' and 'Payment' links.");
+                      myContentsLink.classList.add('disabled-link');
+                      paymentLink.classList.add('disabled-link');
+                      myContentsLink.style.pointerEvents = 'none';
+                      paymentLink.style.pointerEvents = 'none';
+                      startTimeContainer.classList.add('d-none');
+                  } else if (payStatus === "Pending") {
+                      console.log("User has a subscription but paystatus is 'Pending'. Disabling 'My Contents' but allowing access to 'Payment'.");
+                      // Disable 'My Contents' but allow 'Payment'
+                      myContentsLink.classList.add('disabled-link');
+                      myContentsLink.style.pointerEvents = 'none';
+
+                      paymentLink.classList.remove('disabled-link');
+                      paymentLink.style.pointerEvents = 'auto';
+                      startTimeContainer.classList.add('d-none');
+                  } else if (payStatus === "Paid") {
+                      console.log("User has paid. Enabling access to 'My Contents' and 'Payment'.");
+                      // Enable both 'My Contents' and 'Payment' as the user has paid
+                      myContentsLink.classList.remove('disabled-link');
+                      myContentsLink.style.pointerEvents = 'auto';
+
+                      paymentLink.classList.remove('disabled-link');
+                      paymentLink.style.pointerEvents = 'auto';
+                      startTimeContainer.classList.add('d-none');
+                  }
+
+              } else if (userRole === "LGU Client") {
+                  console.log("LGU Client detected. No restrictions applied.");
+                  const subscription = document.querySelector('a[href="subscription.html"]'); 
+                  myContentsLink.classList.remove('disabled-link');
+                  paymentLink.classList.remove('disabled-link');
+                  subscription.style.display = 'none';
+                  paymentLink.style.display = 'none';
+                  startTimeContainer.classList.remove('d-none');
+
+                   // Hide 'Start Time' and show 'End Date' in the upload form for LGU Client
+                  document.getElementById('startTimeLabel').textContent = 'End Date';
+                  document.getElementById('timeInput').setAttribute('type', 'date');
+                  document.getElementById('timeInput').setAttribute('id', 'endDateInput');
+              }
+
+              await loadContents();
+
+            } else {
+              console.error("User document does not exist.");
+            }
+          } catch (error) {
+            console.error("Error fetching user document:", error);
+          } finally {
+            loadingSpinner.style.display = 'none'; // Hide spinner after completing the function
+          } 
+        }
+
+        // // Call the function after user login
+        checkSubscription();
+        displayNotifications(userId);
+
+        // Check if the user is already logged in by looking into localStorage
+        let storedUserId = localStorage.getItem('userID');
+        console.log("Stored userID in localStorage:", storedUserId);  
+
+        if (!storedUserId) {
+            console.log("No userID found in localStorage. Checking Firebase Authentication...");
+            onAuthStateChanged(auth, (user) => {
+                if (user) {
+                    const userId = user.uid;  
+                    console.log("User is signed in with Firebase. userID:", userId);
+                    localStorage.setItem('userID', userId);
+                    console.log("userID saved to localStorage:", userId);
+                    checkSubscription(userId);
+                } else {
+                    console.error("No user is signed in.");
+                    window.location.href = 'login.html';
+                }
+            });
+        } else {
+            console.log("Using stored userID from localStorage for subscription check.");
+            checkSubscription(storedUserId);
+        }
+
+         // Function to display notifications for the current user
+      function displayNotifications(userId) {
+        const notificationsList = document.querySelector('.notifications');
+        const notificationsBadge = document.querySelector('.badge-number');
+        const dropdownHeader = document.querySelector('.dropdown-header');
+
+        const notificationsRef = collection(db, "NOTIFICATIONS", userId, "usernotif");
+
+        // Listen for real-time changes in the notifications collection
+        onSnapshot(notificationsRef, (snapshot) => {
+          console.log("Real-time updates for notifications");
+
+          // Clear only the notification items (preserve header and footer)
+          notificationsList.querySelectorAll('.notification-item').forEach(item => item.remove());
+
+          // Initialize notification count for all 'notified: false' notifications
+          let notificationCount = snapshot.docs.filter(doc => doc.data().notified === false).length;
+
+          // Collect all notifications in an array where 'notified' is false
+          const notificationsArray = snapshot.docs.map(doc => {
+            const notification = doc.data();
+
+            // Only process notifications where 'notified' is false
+            if (notification.notified === false) {
+              return {
+                id: doc.id,
+                ...notification
+              };
+            }
+            return null;
+          }).filter(notification => notification !== null);
+
+          // Sort notifications by timestamp in descending order (latest first)
+          notificationsArray.sort((a, b) => b.timestamp.seconds - a.timestamp.seconds);
+
+          // Limit the notifications to the first 2
+          const limitedNotifications = notificationsArray.slice(0, 2);
+
+          // Loop through the limited notifications and create the list items
+          limitedNotifications.forEach(notification => {
+            const { title, message, timestamp, type, id } = notification;
+
+            // Convert timestamp to date and time (e.g., Dec 10, 8:46 PM)
+            const timeAgo = new Date(timestamp.seconds * 1000).toLocaleDateString([], {
+              month: 'short', // 'short' will give abbreviated month (e.g., "Dec")
+              day: '2-digit'  // Two-digit day (e.g., "10")
+            }) + ' ' + new Date(timestamp.seconds * 1000).toLocaleTimeString([], {
+              hour: '2-digit',
+              minute: '2-digit',
+              hour12: true
+            });
+
+            // Create notification item
+            const notificationItem = document.createElement('li');
+            notificationItem.classList.add('notification-item');
+            notificationItem.innerHTML = `
+          <i class="bi bi-bell"></i>
+          <div>
+            <h4>${title}</h4>
+            <p>${message}</p>
+            <p>${timeAgo}</p>
+          </div>
+        `;
+
+            const notificationLine = document.createElement('li');
+            notificationLine.innerHTML = `
+          <hr class="dropdown-divider">
+        `;
+            // Append notification item to the list
+            notificationsList.appendChild(notificationItem);
+            notificationsList.appendChild(notificationLine);
+
+           
+          });
+
+          // Update the badge count
+          notificationsBadge.textContent = notificationCount;
+
+          // Update the dropdown header with the notification count
+          dropdownHeader.innerHTML = `
+      You have <span class="badge rounded-pill bg-primary p-2 ms-2">${notificationCount}</span> unread notifications
+      <a href="notifications.html"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+    `;
+
+          // If no notifications, display a default message
+          if (notificationCount === 0) {
+            dropdownHeader.innerHTML = `
+      You have <span class="badge rounded-pill bg-primary p-2 ms-2">${notificationCount}</span> unread notifications
+      <a href="notifications.html"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+    `;
+          }
+        });
+      }
+
+
+        async function loadContents() {
+          try {
+              const userId = localStorage.getItem("userID"); // Ensure you have the user ID stored
+              const userContentDoc = await getDoc(doc(db, "CONTENTS", userId)); // Get the document for the current user
+
+              if (userContentDoc.exists()) {
+                  const contentData = userContentDoc.data(); // Retrieve the content data
+                  const tableBody = document.querySelector('.table tbody'); // Get the table body
+                  const displayTimeHeader = document.querySelector('.table thead th:nth-child(7)');
+
+                  // Clear any existing rows in the table before loading new content
+                  tableBody.innerHTML = '';
+
+                  // Create a new row with the content data from Firestore
+                  var fileName = contentData.filename;
+                  var fileType = contentData.filetype;
+                  var fileUrl = contentData.content;
+                  var displayDate = contentData.displaydate;
+                  var remarks = contentData.remarks.replace(/(\d+\.)/g, "•");
+                  // var screenLocation = contentData.screen;
+                  var contentStatus = contentData.contentstatus || 'Pending'; // Set default status if not available
+
+                  // Determine the display value for time
+                  var displayTime = (userRole === "LGU Client" || userRole === "Business Client" || userRole === "Personal Client") ? 
+                      new Date(contentData.enddate).toLocaleDateString() : 
+                      contentData.displaytime;
+                  
+                      if (userRole === "LGU Client") {
+                          displayTimeHeader.textContent = "End Date"; // Change header for LGU Clients
+                      } else {
+                          displayTimeHeader.textContent = "End Date"; // Default header for others
+                      }
+
+                  var newRow = document.createElement('tr');
+                  newRow.innerHTML = `
+                      <td><input type="checkbox" class="rowCheckbox"></td>
+                      <td>
+                          ${fileType.startsWith('image/') ? 
+                              `<img src="${fileUrl}" alt="${fileName}" class="file-icon" style="width: 50px; cursor: pointer;">` :
+                              `<video src="${fileUrl}" class="file-icon" style="width: 50px; cursor: pointer;" muted></video>`}
+                      </td>
+                      <td>${fileName}</td>
+                      <td>${fileType}</td>
+                      <td>${new Date(contentData.dateuploaded).toLocaleDateString()}</td>
+                      <td>${new Date(contentData.displaydate).toLocaleDateString()}</td>
+                      <td>${displayTime}</td> <!-- This will show either displayTime or endDate -->
+                      <td>${contentStatus}</td>
+                      <td>${remarks}</td>
+                  `;
+
+                  // Add event listener to the file element to show file in modal
+                  newRow.querySelector('.file-icon').addEventListener('click', function () {
+                      var previewContent = document.getElementById('filePreviewContent');
+                      var modalTitle = document.getElementById('filePreviewModalLabel');
+
+                      // Set the modal title to the file name
+                      modalTitle.textContent = fileName;
+
+                      // Display file preview based on file type
+                      if (fileType.startsWith('image/')) {
+                          previewContent.innerHTML = `<img id="imagePreview" src="${fileUrl}" alt="${fileName}" style="max-width: 100%;">`;
+                      } else if (fileType.startsWith('video/')) {
+                          previewContent.innerHTML = `
+                              <video id="videoPreview" controls style="max-width: 100%;">
+                                  <source src="${fileUrl}" type="${fileType}">
+                                  Your browser does not support the video tag.
+                              </video>`;
+                      }
+
+                      var filePreviewModal = new bootstrap.Modal(document.getElementById('filePreviewModal'));
+                      filePreviewModal.show();
+                  });
+
+                  // Append the new row to the table
+                  tableBody.appendChild(newRow);
+
+                  noEntriesMessage.style.display = 'none';
+
+                  // Disable the upload button and enable the delete button
+                  document.getElementById('tableUpload').disabled = true;
+                  document.getElementById('deleteBtn').disabled = false;
+              } else {
+                  console.log("No content found for this user.");
+                  noEntriesMessage.style.display = 'table-row';
+                  document.getElementById('tableUpload').disabled = false;
+                  document.getElementById('deleteBtn').disabled = true;
+              }
+          } catch (error) {
+              console.error("Error loading contents:", error);
+          }
+      }
+
+
+      document.getElementById('uploadBtn').addEventListener('click', async function () {
+    var form = document.getElementById('uploadForm');
+    var dateInput = document.getElementById('dateInput');
+   // Adjust validation to skip timeInput if hidden or not required
+    const timeOrEndDateInput = userRole === "LGU Client" ? document.getElementById('endDateInput') : document.getElementById('timeInput');
+    var errorMessage = dateInput.nextElementSibling;
+    var fileInput = document.getElementById('fileInput');
+    var fileFeedback = document.getElementById('fileFeedback');
+    const time = userRole === "LGU Client" ? null : timeOrEndDateInput.value;
+
+    // Clear previous invalid classes
+    fileInput.classList.remove('is-invalid');
+    dateInput.classList.remove('is-invalid');
+    fileFeedback.classList.add('d-none');
+
+    if (form.checkValidity()) {
+        var file = fileInput.files[0];
+        var fileName = file ? file.name : 'No file chosen';
+        var fileType = file ? file.type : 'Unknown type';
+        var date = dateInput.value;
+        const timeOrEndDate = timeOrEndDateInput.value;
+        // var screenLocation = document.getElementById('screenLocation').value;
+
+        var today = new Date();
+        var todayMidnight = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+        var selectedDate = new Date(date);
+      
+        let displaytime;
+
+      if (userRole !== "LGU Client") {
+          // Process time only for non-LGU Clients
+          let [hours, minutes] = time.split(':');
+          let ampm = hours >= 12 ? 'PM' : 'AM';
+          hours = hours % 12 || 12; // Convert to 12-hour format, 0 becomes 12
+          displaytime = `${hours}:${minutes}:${minutes} ${ampm}`;
+      } else {
+          // LGU Clients don't need displaytime
+          displaytime = null; // Or any value specific to your logic
+      }
+
+
+       // Check if selected date is in the past
+      if (selectedDate < todayMidnight) {
+          dateInput.classList.add('is-invalid');
+          errorMessage.textContent = 'Selected date is in the past.';
+          errorMessage.classList.remove('d-none');
+      } else {
+          dateInput.classList.remove('is-invalid');
+          errorMessage.classList.add('d-none');
+
+          // Check slot availability
+          const contentsRef = collection(db, "CONTENTS");
+          const q = query(contentsRef, where("contentstatus", "==", "Approved"));
+          const querySnapshot = await getDocs(q);
+          
+          let totalDuration = 0;
+          querySnapshot.forEach((doc) => {
+              const contentData = doc.data();
+              const contentStartDate = new Date(contentData.displaydate);
+              const contentEndDate = new Date(contentData.enddate);
+
+              // Check if the inputted date falls within the start and end date range
+              if (selectedDate >= contentStartDate && selectedDate <= contentEndDate) {
+                  totalDuration += contentData.duration; // Directly add duration
+              }
+          });
+
+          const maxDuration = 21600; // 6 hours in seconds
+
+          if (totalDuration >= maxDuration) {
+              dateInput.classList.add('is-invalid');
+              errorMessage.textContent = 'The selected date is fully booked. Please choose another date.';
+              errorMessage.classList.remove('d-none');
+              return;
+          }
+
+            // Validate the file size and type
+            const maxImageSize = 15 * 1024 * 1024; // 15MB in bytes
+            const fileSize = file.size;
+            const isImage = fileType.startsWith('image/');
+            const isVideo = fileType.startsWith('video/');
+
+            if (isImage && fileSize > maxImageSize) {
+                // Display invalid feedback for image size
+                fileInput.classList.add('is-invalid');
+                fileFeedback.textContent = 'Image size exceeds 15MB limit.';
+                fileFeedback.classList.remove('d-none');
+                return;
+            }
+
+            if (isVideo) {
+              // Validate video duration (5 seconds to 30 seconds)
+              const videoElement = document.createElement('video');
+              videoElement.src = URL.createObjectURL(file);
+
+              videoElement.addEventListener('loadedmetadata', async function () {
+                  const videoDuration = videoElement.duration; // Get video duration in seconds
+                  const videoWidth = videoElement.videoWidth;
+                  const videoHeight = videoElement.videoHeight;
+                  
+                  // Validate resolution (1920x1080) and aspect ratio (16:9)
+                  if (videoWidth !== 1920 || videoHeight !== 1080) {
+                      fileInput.classList.add('is-invalid');
+                      fileFeedback.textContent = 'Video resolution must be 1920x1080 pixels (16:9 aspect ratio).';
+                      fileFeedback.classList.remove('d-none');
+                      return;
+                  }
+
+                  if (videoDuration < 5) {
+                      fileInput.classList.add('is-invalid');
+                      fileFeedback.textContent = 'Video is shorter than 5 seconds.';
+                      fileFeedback.classList.remove('d-none');
+                      return;
+                  }
+                  
+                  if (videoDuration > 30) {
+                      fileInput.classList.add('is-invalid');
+                      fileFeedback.textContent = 'Video exceeds 30 seconds.';
+                      fileFeedback.classList.remove('d-none');
+                      return;
+                  }
+
+                  // Proceed with upload if validation passes
+                  fileInput.classList.remove('is-invalid');
+                  fileFeedback.classList.add('d-none');
+
+                  // Fetch user's subscription to compute enddate
+                  const userId = localStorage.getItem("userID");
+                  const userDoc = await getDoc(doc(db, "CLIENTS", userId));
+
+                  console.log("User Document Data:", userDoc.data());
+
+                  if (userDoc.exists()) {
+                      const subscription = userDoc.data().subscription || null; // Handle undefined case
+                      console.log("User Subscription:", subscription);
+
+                      const startDate = new Date(date);
+                      let endDate = null; // Initialize endDate
+
+                      // Set endDate based on user role
+                      if (userRole === "LGU Client") {
+                          // Use the value from timeOrEndDateInput for LGU Clients
+                          endDate = new Date(timeOrEndDateInput.value);
+                      } else {
+                          // Compute enddate based on subscription type
+                          if (subscription === "Weekly Plan") {
+                              endDate = new Date(startDate);
+                              endDate.setDate(endDate.getDate() + 7); // Add 7 days
+                          } else if (subscription === "Monthly Plan") {
+                              endDate = new Date(startDate);
+                              endDate.setMonth(endDate.getMonth() + 1); // Add 1 month
+                          } else if (subscription === "Pay per Play") {
+                              endDate = startDate; // For Pay per Play or any other plan
+                          }
+                      }
+
+                      console.log("Computed End Date:", endDate); // Check computed endDate
+
+                      // Handle the upload after getting enddate
+                      handleUpload(file, fileName, fileType, date, displaytime, endDate);
+                  } else {
+                      console.error("User document does not exist.");
+                      console.log("Unable to retrieve user subscription data.");
+                  }
+              });
+          }
+
+            else if (!isImage && !isVideo) {
+                // Display invalid feedback for unsupported file type
+                fileInput.classList.add('is-invalid');
+                fileFeedback.textContent = 'Invalid file type. Please upload an image or video.';
+                fileFeedback.classList.remove('d-none');
+            } else if (isImage) {
+                // Proceed with image upload and compute endDate
+                const userId = localStorage.getItem("userID");
+                const userDoc = await getDoc(doc(db, "CLIENTS", userId));
+
+                if (userDoc.exists()) {
+                    const subscription = userDoc.data().subscription || null; // Handle undefined case
+                    console.log("User Subscription:", subscription);
+
+                    const startDate = new Date(date);
+                    let endDate = null; // Initialize endDate
+
+                    // Set endDate based on user role
+                    if (userRole === "LGU Client") {
+                        // Use the value from timeOrEndDateInput for LGU Clients
+                        endDate = new Date(timeOrEndDateInput.value);
+                    } else {
+                        // Compute enddate based on subscription type
+                        if (subscription === "Weekly Plan") {
+                            endDate = new Date(startDate);
+                            endDate.setDate(endDate.getDate() + 7); // Add 7 days
+                        } else if (subscription === "Monthly Plan") {
+                            endDate = new Date(startDate);
+                            endDate.setMonth(endDate.getMonth() + 1); // Add 1 month
+                        } else if (subscription === "Pay per Day") {
+                            endDate = startDate; // For Pay per Play or any other plan
+                        }
+                    }
+                    console.log("Computed End Date for Image:", endDate); // Check computed endDate for image
+
+                    // Proceed with image upload
+                    handleUpload(file, fileName, fileType, date, displaytime, endDate); // Pass computed endDate
+                } else {
+                    console.error("User document does not exist.");
+                    console.log("Unable to retrieve user subscription data.");
+                }
+            }
+        }
+    } else {
+        form.classList.add('was-validated');
+    }
+});
+
+
+// Function to handle the actual file upload
+async function handleUpload(file, fileName, fileType, date, time = "", endDate) {
+    const userId = localStorage.getItem("userID"); // Ensure you have the user ID stored
+    const storageRef = ref(storage, `contents/${userId}/${fileName}`); // Create storage path
+
+    try {
+        // Fetch the current user's data from Firestore
+        const userDoc = await getDoc(doc(db, "CLIENTS", userId));
+        if (!userDoc.exists()) {
+            throw new Error("User data not found in CLIENTS collection.");
+        }
+        const userData = userDoc.data();
+        const firstName = userData.firstname || "Unknown";
+        const lastName = userData.lastname || "Unknown";
+
+        // Upload the file to Firebase Storage
+        uploadText.textContent = 'Uploading';
+        spinner.classList.remove('d-none');
+        const uploadTask = await uploadBytes(storageRef, file);
+        const fileUrl = await getDownloadURL(uploadTask.ref); // Get the file URL after upload
+
+        // Get the file size
+        const fileSize = file.size; // Size in bytes
+
+        // Determine the duration
+        let duration;
+        if (fileType.startsWith('video/')) {
+            const videoElement = document.createElement('video');
+            videoElement.src = URL.createObjectURL(file);
+
+            // Wait for the metadata to load to get the video duration
+            await new Promise((resolve) => {
+                videoElement.addEventListener('loadedmetadata', () => {
+                    duration = videoElement.duration; // Duration in seconds
+                    resolve();
+                });
+            });
+        } else {
+            duration = 15; // Set duration to 15 seconds for images
+        }
+
+        // Save the upload details to Firestore
+        const contentData = {
+            filename: fileName,
+            filetype: fileType,
+            filesize: fileSize,
+            dateuploaded: new Date().toISOString(),
+            displaydate: date,
+            screen: "----",
+            content: fileUrl,
+            contentstatus: "Pending",
+            enddate: endDate ? `${endDate.getFullYear()}-${String(endDate.getMonth() + 1).padStart(2, '0')}-${String(endDate.getDate()).padStart(2, '0')}` : null,
+            duration: duration,
+            remarks: "",
+            dateApproved: ""
+        };
+
+        // Add display time if the user role is not LGU Client
+        if (userRole !== "LGU Client") {
+            contentData.displaytime = time;
+        }
+
+        // Add the content data to Firestore
+        await setDoc(doc(db, "CONTENTS", userId), contentData, { merge: true });
+
+        // Hide the upload modal
+        const uploadModal = bootstrap.Modal.getInstance(document.getElementById('uploadModal'));
+
+        // Clear the upload form
+        const uploadForm = document.getElementById('uploadForm'); // Assuming this is the form ID
+        uploadForm.reset(); // Reset all fields to default values
+
+        // Reset feedback messages and styles
+        document.getElementById('fileFeedback').classList.add('d-none');
+        document.getElementById('dateInput').classList.remove('is-invalid');
+
+        // Hide the modal
+        uploadModal.hide();
+
+        // Show success modal
+        const successModal = new bootstrap.Modal(document.getElementById('successModal'));
+        successModal.show();
+        const accountTypeMessage = userRole === 'LGU Client'
+                        ? 'LGU Advertisements'
+                        : 'Business & Personal Advertisements';
+
+        // Now, send a notification to admins with an approved status
+        const adminsSnapshot = await getDocs(collection(db, "ADMINS"));
+        const notificationID = generateRandomId();
+        const notificationData = {
+            title: 'Content Approval',
+            message: `${firstName} ${lastName} uploaded a content or advertisement for approval. Please check it on ${accountTypeMessage} under Contents Tab.`,
+            timestamp: new Date(),
+            notified: false
+        };
+
+        // Send the notification to admins with "Approved" accstatus
+        const notificationPromises = [];
+        adminsSnapshot.forEach(adminDoc => {
+            const adminData = adminDoc.data();
+            if (adminData.accstatus === 'Approved') {
+                const adminID = adminDoc.id;
+                const notificationDocRef = doc(db, 'NOTIFICATIONS', adminID, 'usernotif', notificationID);
+                notificationPromises.push(setDoc(notificationDocRef, notificationData));
+            }
+        });
+
+        await Promise.all(notificationPromises);
+        console.log("Notifications added for approved admins.");
+
+        document.getElementById('successBtn').addEventListener('click', function () {
+            loadContents();
+        });
+    } catch (error) {
+        console.error("Error uploading file:", error);
+        alert("There was an error uploading your file. Please try again.");
+    }
+}
+
+
+        // Random ID generator function
+        function generateRandomId() {
+          const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+          let id = '';
+          for (let i = 0; i < 20; i++) { // Firebase IDs are typically 20 characters long
+            id += characters.charAt(Math.floor(Math.random() * characters.length));
+          }
+          return id;
+        }
+
+
+
+
+        // Delete selected rows when the delete button is clicked
+        document.getElementById('deleteBtn').addEventListener('click', function() {
+                const checkboxes = document.querySelectorAll('.rowCheckbox:checked'); 
+                if (checkboxes.length === 0) {
+                    alert("Please select at least one file to delete.");
+                    return;
+                }
+
+                // Show the delete confirmation modal
+                const deleteModal = new bootstrap.Modal(document.getElementById('deleteModal'));
+                const deletesuccessModal = new bootstrap.Modal(document.getElementById('deletesuccessModal'));
+                deleteModal.show();
+
+                // Event listener for the confirm delete button in the modal
+                document.getElementById('tableDelete').addEventListener('click', async function(event) {
+                    if (event.target.classList.contains('btn-danger')) {
+                        // Proceed with deletion
+                        try {
+                            const deletePromises = Array.from(checkboxes).map(async (checkbox) => {
+                                const row = checkbox.closest('tr'); // Get the row of the checkbox
+                                const filename = row.children[2].textContent; // Get the filename from the table cell
+                                const userId = localStorage.getItem("userID"); // Replace with the actual user ID dynamically
+                                const storagePath = `contents/${userId}/${filename}`; // Construct the storage path for the file
+
+                                console.log("Deleting file at path:", storagePath); // Log the storage path
+
+                                // Delete from Firestore
+                                const paymentDocRef = doc(db, "CONTENTS", userId); // Reference to the payment document
+                                await deleteDoc(paymentDocRef); // Delete the payment document
+
+                                // Delete from Storage
+                                const storageRef = ref(storage, storagePath); // Create a reference to the file in Storage
+                                await deleteObject(storageRef); // Delete the file from Storage
+
+                                // Remove the row from the table
+                                row.remove(); 
+                            });
+
+                            // Wait for all deletions to complete
+                            await Promise.all(deletePromises);
+        
+
+                            deleteModal.hide(); // Hide the modal after deletion
+                            deletesuccessModal.show();
+                              
+                            document.getElementById('deletesuccessBtn').addEventListener('click', async function(event) {
+                                // Refresh the page
+                                   location.reload();
+                            });
+
+                        } catch (error) {
+                            console.error("Error deleting files:", error);
+                        }
+                    }
+                });
+
+            });
+
+      } else {
+        console.error("User ID not found in localStorage.");
+      }
+    });
+</script>
+
+   
+
+  <script>
+    // for preview files
+    function previewFile() {
+        const fileInput = document.getElementById('fileInput');
+        const file = fileInput.files[0];
+        const imagePreview = document.getElementById('imagePreview');
+        const videoPreview = document.getElementById('videoPreview');
+        const videoSource = document.getElementById('videoSource');
+        const errorModal = new bootstrap.Modal(document.getElementById('errorModal'));
+
+        if (file) {
+            const fileURL = URL.createObjectURL(file);
+
+            if (file.type.startsWith('image')) {
+                const img = new Image();
+                img.src = fileURL;
+
+                img.onload = function() {
+                    if (img.width > img.height) {
+                        imagePreview.src = fileURL;
+                        imagePreview.classList.remove('d-none');
+                        videoPreview.classList.add('d-none');
+                    } else {
+                        fileInput.value = ''; // Reset the file input
+                        errorModal.show(); // Show the error modal
+                    }
+                };
+            } else if (file.type.startsWith('video')) {
+                const video = document.createElement('video');
+                video.src = fileURL;
+
+                video.onloadedmetadata = function() {
+                    if (video.videoWidth > video.videoHeight) {
+                        videoSource.src = fileURL;
+                        videoPreview.load();
+                        videoPreview.classList.remove('d-none');
+                        imagePreview.classList.add('d-none');
+                    } else {
+                        fileInput.value = ''; // Reset the file input
+                        errorModal.show(); // Show the error modal
+                    }
+                };
+            }
+        }
+    }
+
+    // // Initialize  tooltips
+    // var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    // var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    //     return new bootstrap.Tooltip(tooltipTriggerEl);
+    // });
+
+  
+    // let lastFileName = '';
+
+    // // Select all checkboxes when the header checkbox is clicked
+    // document.getElementById('selectAllCheckbox').addEventListener('click', function() {
+    //     const checkboxes = document.querySelectorAll('.rowCheckbox');
+    //     checkboxes.forEach(checkbox => {
+    //         checkbox.checked = this.checked;
+    //     });
+    // });
+
+    // // Filter table by status
+    // document.getElementById('statusFilter').addEventListener('change', function () {
+    //     var filterValue = this.value.toLowerCase();
+    //     var rows = document.querySelectorAll('.table tbody tr');
+
+    //     rows.forEach(row => {
+    //         var status = row.cells[6].textContent.toLowerCase();
+    //         if (filterValue === "" || status.includes(filterValue)) {
+    //             row.style.display = "";
+    //         } else {
+    //             row.style.display = "none";
+    //         }
+    //     });
+    // });
+</script>
+
+</body>
+</html>

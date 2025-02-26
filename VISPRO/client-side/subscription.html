@@ -1,0 +1,1403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subscription</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../assets/img/whiteLogo.png" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="../assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="../assets/vendor/simple-datatables/style.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+  <link href="../assets/css/cl-style.css" rel="stylesheet">
+
+  <!-- Paypal Link -->
+  <script
+    src="https://www.paypal.com/sdk/js?client-id=AV9jthBq7NlHCV0c4l3Kmse7PuEKJ31w3VlGQHqGGHStwmxVHhUdj0eT50RZhcNCjHucfjrUSqj8mvRd"> </script>
+
+
+</head>
+
+<body>
+
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="dashboard.html" class="logo d-flex align-items-center">
+        <img src="../assets/img/whiteLogo.png" alt="">
+        <span class="d-none d-lg-block">Vispro</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+
+        <li class="nav-item dropdown">
+
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-bell"></i>
+            <span class="badge bg-black badge-number">0</span>
+          </a><!-- End Notification Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+            <li class="dropdown-header">
+              You have <span class="badge rounded-pill bg-primary p-2 ms-2">0</span> new notifications
+              <a href="notifications.html"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <!-- Notifications will be appended here -->
+          </ul><!-- End Notification Dropdown Items -->
+        </li><!-- End Notification Nav -->
+
+
+        <li class="nav-item dropdown pe-3">
+
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+            <img src="../assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
+            <span class="d-none d-md-block dropdown-toggle ps-2"></span>
+          </a><!-- End Profile Iamge Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header">
+              <h6></h6>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-person"></i>
+                <span>My Profile</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="guidelines.html">
+                <i class="bi bi-question-circle"></i>
+                <span>Guidelines</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <i class="bi bi-box-arrow-right"></i>
+                <span>Sign Out</span>
+              </a>
+            </li>
+
+          </ul><!-- End Profile Dropdown Items -->
+        </li><!-- End Profile Nav -->
+
+      </ul>
+    </nav><!-- End Icons Navigation -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item custom-card-hover" style="transition: all 0.3s;">
+        <a class="nav-link collapsed" href="dashboard.html">
+          <i class="bi bi-grid"></i>
+          <span>Dashboard</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+
+      <li class="nav-item mt-3 custom-card-hover" style="transition: all 0.3s;">
+        <a class="nav-link collapsed" href="mycontents.html">
+          <i class="bi bi-collection"></i>
+          <span>My Contents</span>
+        </a>
+      </li><!-- End My Contents Nav -->
+
+      <li class="nav-item mt-3 custom-card-hover" style="transition: all 0.3s;">
+        <a class="nav-link " href="subscription.html">
+          <i class="bi bi-star"></i>
+          <span>Subscription</span>
+        </a>
+      </li><!-- End Subscription Nav -->
+
+      <li class="nav-item mt-3 custom-card-hover" style="transition: all 0.3s;">
+        <a class="nav-link collapsed" href="payment.html">
+          <i class="bi bi-receipt"></i>
+          <span>Payment</span>
+        </a>
+      </li><!-- End Payment Nav -->
+
+      <li class="nav-item mt-3 custom-card-hover" style="transition: all 0.3s;">
+        <a class="nav-link collapsed" href="notifications.html">
+          <i class="bi bi-bell"></i>
+          <span>Notifications</span>
+        </a>
+      </li><!-- End Notifications Nav -->
+
+
+      <li class="nav-heading mt-3">Personal</li>
+
+      <li class="nav-item mt-3 custom-card-hover" style="transition: all 0.3s;">
+        <a class="nav-link collapsed" href="users-profile.html">
+          <i class="bi bi-person"></i>
+          <span>Account</span>
+        </a>
+      </li><!-- End Account Nav -->
+
+      <li class="nav-item mt-3 custom-card-hover" style="transition: all 0.3s;">
+        <a class="nav-link collapsed" href="guidelines.html">
+          <i class="bi bi-question-circle"></i>
+          <span>Guidelines</span>
+        </a>
+      </li><!-- End Guidelines Nav -->
+
+      <li class="nav-item mt-3 custom-card-hover" style="transition: all 0.3s;">
+        <a class="nav-link collapsed" href="contact.html">
+          <i class="bi bi-person"></i>
+          <span>Contact Us</span>
+        </a>
+      </li><!-- End Contact Nav -->
+
+      <li class="nav-item mt-3 custom-card-hover" style="transition: all 0.3s;">
+        <a class="nav-link collapsed" href="../index.html">
+          <i class="bi bi-box-arrow-right"></i>
+          <span>Log Out</span>
+        </a>
+      </li><!-- End Log Out Page Nav -->
+
+  </aside><!-- End Sidebar-->
+
+  <main id="main" class="main">
+    <div class="pagetitle">
+      <h1>Subscription</h1>
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="dashboard.html">Home</a></li>
+          <li class="breadcrumb-item active">Subscription: </li>
+        </ol>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <!-- Loading Spinner -->
+    <div id="loadingSpinner" style="display: none; text-align: center;
+      position: fixed; top: 0; left: 0; width: 100%; height: 100%; 
+      display: flex; align-items: center; justify-content: center; ">
+      <div class="spinner-border" role="status">
+        <span class="sr-only"></span>
+      </div>
+    </div>
+
+    <div id="mainContent" style="display: none;">
+      <div class="pagetitle text-center ">
+        <h1 class="fw-bold">We Are Offering:</h1>
+      </div><!-- End Page Title -->
+
+      <section class="section dashboard me-5 ms-5">
+        <div class="row align-items-top justify-content-center">
+          <!-- Pay per Day Card -->
+          <div class="col-lg-4 mb-4">
+            <div class="card sales-card shadow-lg border-0 h-100 custom-card-hover" style="transition: all 0.3s;">
+              <div class="card-body custom-card-shadow-blue">
+                <h3 class="text-color-blue text-center fw-bold mt-3">Pay per Day</h3>
+                <div class="d-flex justify-content-center">
+                  <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                    <i class="bi bi-cash"></i>
+                  </div>
+                </div>
+                <div class="text-center">
+                  <h1 class="fw-bold text-primary" id="payPerDayPrice"></h1><br>
+                  <ul class="pricing-content list-unstyled" id="payPerDayDetails"></ul>
+                  <button type="button" id="payPerPlayButton"
+                    class="btn btn-outline-primary rounded-pill mt-3 subscribe-btn" data-bs-toggle="modal"
+                    data-bs-target="#subscriptionModal" data-plan="Pay per Day">Subscribe</button>
+                  <button type="button" id="payPerPlayCancelbtn"
+                    class="btn btn-outline-warning rounded-pill d-none mt-3" data-bs-toggle="modal"
+                    data-bs-target="#cancelModal" data-plan="Cancel Pay per Day">Cancel</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Weekly Card -->
+          <div class="col-lg-4 mb-4">
+            <div class="card revenue-card shadow-lg border-0 h-100 custom-card-hover" style="transition: all 0.3s;">
+              <div class="card-body custom-card-shadow-green">
+                <h3 class="text-color-blue text-center fw-bold mt-3">Weekly</h3>
+                <div class="d-flex justify-content-center">
+                  <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                    <i class="bi bi-calendar-week"></i>
+                  </div>
+                </div>
+                <div class="text-center">
+                  <h1 class="fw-bold text-success" id="weeklyPrice"></h1><br>
+                  <ul class="pricing-content list-unstyled" id="weeklyDetails"></ul>
+                  <button type="button" id="weeklyButton"
+                    class="btn btn-outline-success rounded-pill mt-3 subscribe-btn" data-bs-toggle="modal"
+                    data-bs-target="#subscriptionModal" data-plan="Weekly Plan">Subscribe</button>
+                  <button type="button" id="weeklyCancelbtn" class="btn btn-outline-warning rounded-pill d-none mt-3"
+                    data-bs-toggle="modal" data-bs-target="#cancelModal" data-plan="Cancel Weekly Plan">Cancel</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Monthly Card -->
+          <div class="col-lg-4 mb-4">
+            <div class="card customers-card shadow-lg border-0 h-100 custom-card-hover" style="transition: all 0.3s;">
+              <div class="card-body custom-card-shadow-red">
+                <h3 class="text-color-blue text-center fw-bold mt-3">Monthly</h3>
+                <div class="d-flex justify-content-center">
+                  <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                    <i class="bi bi-calendar-month"></i>
+                  </div>
+                </div>
+                <div class="text-center">
+                  <h1 class="fw-bold text-danger" id="monthlyPrice"></h1><br>
+                  <ul class="pricing-content list-unstyled" id="monthlyDetails"></ul>
+                  <button type="button" id="monthlyButton"
+                    class="btn btn-outline-danger rounded-pill mt-3 subscribe-btn" data-bs-toggle="modal"
+                    data-bs-target="#subscriptionModal" data-plan="Monthly Plan">Subscribe</button>
+                  <button type="button" id="monthlyCancelbtn" class="btn btn-outline-warning rounded-pill d-none mt-3"
+                    data-bs-toggle="modal" data-bs-target="#cancelModal" data-plan="Cancel Monthly Plan">Cancel</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Subscription Modal -->
+      <div class="modal fade" id="subscriptionModal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header custom-modal-header">
+              <h5 class="modal-title ">Subscription Payment</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form id="subscriptionForm" class="row g-3 text-dark" novalidate>
+                <input type="hidden" id="selectedPlan">
+                <input type="hidden" id="selectedPrice">
+                <div class="col-md-6">
+                  <label for="firstname" class="form-label"><i class="fas fa-user"></i> First Name <span
+                      class="text-danger">*</span></label>
+                  <input type="text" class="form-control custom-border" id="firstname" required data-bs-toggle="tooltip"
+                    data-bs-placement="top" title="First name must contain letters only.">
+                  <div class="invalid-feedback text-size2">Please enter a valid first name (letters only).</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="lastname" class="form-label">Last Name <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control custom-border" id="lastname" required data-bs-toggle="tooltip"
+                    data-bs-placement="top" title="Last name must contain letters only.">
+                  <div class="invalid-feedback text-size2">Please enter a valid last name (letters only).</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+                  <input type="email" class="form-control custom-border" id="email" required data-bs-toggle="tooltip"
+                    data-bs-placement="top" title="Enter a valid email.">
+                  <div class="invalid-feedback text-size2">Please enter a valid email address.</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="paymentSched" class="form-label">Payment Schedule <span
+                      class="text-danger">*</span></label>
+                  <input type="date" class="form-control custom-border" id="paymentSched" required
+                    data-bs-toggle="tooltip" data-bs-placement="top" title="Please select a future date.">
+                  <div class="invalid-feedback text-size2">Please select a future date.</div>
+                </div>
+
+                <fieldset class="md-6">
+                  <legend class="col-form-label pt-0">Mode of Payment</legend>
+                  <div class="d-flex flex-column">
+                    <div class="form-check me-3">
+                      <input class="form-check-input custom-border" type="radio" name="gridRadios" id="gridRadios1"
+                        value="Walk-in" required>
+                      <label class="form-check-label" for="gridRadios1">
+                        Walk-in
+                      </label>
+                    </div>
+                    <div class="form-check mt-2">
+                      <input class="form-check-input custom-border" type="radio" name="gridRadios" id="gridRadios2"
+                        value="Online" disabled>
+                      <label class="form-check-label" for="gridRadios2">
+                        Pay Online
+                      </label>
+                      <small class="text-danger d-block mt-1 ms-4">(Online payments are temporarily unavailable. Please
+                        proceed with walk-in payment.)</small>
+                    </div>
+                  </div>
+                  <div class="invalid-feedback text-size2">Choose your mode of payment.</div>
+                </fieldset>
+
+
+
+                <div id="paypal-button-container" style="display: none;"></div>
+
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input custom-border" type="checkbox" id="gridCheck" required
+                      data-bs-toggle="tooltip" data-bs-placement="top" title="Please check this box."
+                      style="width: 1rem; height: 1rem;">
+                    <label class="form-check-label text-muted small ms-2" for="gridCheck">
+                      I agree that all of my information are valid and correct
+                    </label>
+                    <div class="invalid-feedback text-size2">You must agree before submitting.</div>
+                  </div>
+                </div>
+
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+              <button type="button" class="btn custom-btn-primary" id="modalOkayButton">Okay</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Confirmation Modal -->
+      <div class="modal fade" id="confirmationModal" tabindex="-1" data-bs-backdrop="static"
+        aria-labelledby="confirmationModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content  d-flex flex-column">
+            <div class="modal-header custom-modal-header-sm">
+              <h5 class="modal-title" id="confirmationModalLabel">Form Submitted</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p id="confirmationMessage">Your form has been successfully submitted! Follow the instruction below so
+                that
+                you can
+                officially start your subscription plan.
+                <br><br>
+                1. Please visit our treasurer's office in the scheduled date to pay for you subscription plan.
+                <br>2. Once you have paid, you need to upload the reciept on Payment Tab and wait for the payment
+                confirmation.
+                <br>3. If your payment confirmation says "Paid" then you can now upload your contents to My Contents
+                Tab.
+              </p>
+              <div class="mt-auto d-flex justify-content-end">
+                <button type="button" class="btn btn-sm custom-btn-primary" data-bs-dismiss="modal"
+                  id="confimationBtn">Okay</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Cancellation for Subscriptions -->
+      <div class="modal fade" id="cancelModal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header custom-modal-header">
+              <h5 class="modal-title text-white"><i class="bi bi-exclamation-triangle-fill text-warning"></i>
+                Subscription
+                Cancellation</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-dark">
+              <h4><span class="ml-5 fw-bold"> Are you sure you want to cancel you subscription?</span> <i
+                  class="bi bi-exclamation-triangle-fill text-warning"></i> </h4>
+              <p class="text-size1 mt-3">Cancelling your subscription will result in the <span
+                  class="fw-bold text-danger">permanent deletion</span> of your content, which will no longer be
+                displayed
+                on any screens.
+                Please be aware that cancellations are final and <span
+                  class="fw-bold text-danger">non-refundable</span>.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+              <button type="button" class="btn custom-btn-primary" id="modalCancelButton"
+                data-bs-dismiss="modal">Yes</button>
+            </div>
+          </div>
+        </div>
+      </div><!-- End Cancellation Modal -->
+  </main><!-- End #main -->
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span>VisPro</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      <!-- All the links in the footer should remain intact. -->
+      <!-- You can delete the links only if you purchased the pro version. -->
+      <!-- Licensing information: https://bootstrapmade.com/license/ -->
+      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
+      Developed by <a href="#">DS SYS</a>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="../assets/vendor/echarts/echarts.min.js"></script>
+  <script src="../assets/vendor/quill/quill.js"></script>
+  <script src="../assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="../assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.28/jspdf.plugin.autotable.min.js"></script>
+
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-app.js";
+    import { getFirestore, onSnapshot, collection, doc, getDoc, updateDoc, deleteDoc } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-firestore.js";
+    import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-auth.js";
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyAn7_xxeQAhGoOeQ2a7loTMeqBhxu3MJcM",
+      authDomain: "vispro-9ef13.firebaseapp.com",
+      projectId: "vispro-9ef13",
+      storageBucket: "vispro-9ef13.appspot.com",
+      messagingSenderId: "693217615576",
+      appId: "1:693217615576:web:c90add91c2746f4c5b41ad",
+      measurementId: "G-WPYJ56HJ1S"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+    const auth = getAuth(app);
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+      // Function to check if subscription exists and apply restrictions
+      async function checkSubscription(userId) {
+        console.log("Checking subscription for userID:", userId);
+        try {
+          const userDocRef = doc(db, "CLIENTS", userId);
+          const userDoc = await getDoc(userDocRef);
+
+          if (userDoc.exists()) {
+            const userData = userDoc.data();
+            console.log("User document found:", userData);
+
+            const hasSubscription = userData.subscription && userData.subscription !== '';
+            const payStatus = userData.paystatus;
+            const userRole = userData.userrole;
+            const firstName = userData.firstname;
+            const lastName = userData.lastname;
+            const middleInitial = userData.minit ? `${userData.minit}` : ""; // Middle initial, if available
+
+            // Construct abbreviated name
+            const abbreviatedName = `${firstName.charAt(0)}. ${lastName}`;
+            // Full name with middle initial (if available)
+            const fullName = `${firstName} ${middleInitial} ${lastName}`;
+
+            const myContentsLink = document.querySelector('a[href="mycontents.html"]');
+            const paymentLink = document.querySelector('a[href="payment.html"]');
+            const subscriptionDisplay = document.getElementById('subscriptionDisplay');  // If needed elsewhere
+            const breadcrumbItem = document.querySelector('.breadcrumb-item.active');
+            const profileNameSpan = document.querySelector('.nav-profile .dropdown-toggle');  // Profile Name Display
+            const profileNameHeader = document.querySelector('.dropdown-header h6');  // Name in dropdown header
+
+            // Display abbreviated name in the profile
+            profileNameSpan.textContent = abbreviatedName;
+
+            // Add an event listener to update the dropdown with the full name when clicked
+            const profileDropdown = document.querySelector('.nav-profile');
+            profileDropdown.addEventListener('click', function () {
+              profileNameHeader.textContent = fullName;  // Show full name in dropdown when opened
+            });
+
+            // Update the breadcrumb with subscription info
+            if (breadcrumbItem) {
+              breadcrumbItem.innerHTML = `Subscription: ${hasSubscription ? userData.subscription : "No Subscriptions Yet"}`;
+              console.log("Updated breadcrumb text:", breadcrumbItem.innerHTML);
+            } else {
+              console.error("breadcrumbItem element not found.");
+            }
+
+            console.log("User role:", userRole, "Subscription status:", hasSubscription, "Payment status:", payStatus);
+
+            // Disable or enable menu items based on user role, subscription status, and payment status
+            if (userRole === "Business Client" || userRole === "Personal Client") {
+              if (!hasSubscription || payStatus === "") {
+                console.log("No subscription or empty paystatus found. Disabling 'My Contents' and 'Payment' links.");
+                myContentsLink.classList.add('disabled-link');
+                paymentLink.classList.add('disabled-link');
+                myContentsLink.style.pointerEvents = 'none';
+                paymentLink.style.pointerEvents = 'none';
+              } else if (payStatus === "Pending") {
+                console.log("User has a subscription but paystatus is 'Pending'. Disabling 'My Contents' but allowing access to 'Payment'.");
+                // Disable 'My Contents' but allow 'Payment'
+                myContentsLink.classList.add('disabled-link');
+                myContentsLink.style.pointerEvents = 'none';
+
+                paymentLink.classList.remove('disabled-link');
+                paymentLink.style.pointerEvents = 'auto';
+              } else if (payStatus === "Paid") {
+                console.log("User has paid. Enabling access to 'My Contents' and 'Payment'.");
+                // Enable both 'My Contents' and 'Payment' as the user has paid
+                myContentsLink.classList.remove('disabled-link');
+                myContentsLink.style.pointerEvents = 'auto';
+
+                paymentLink.classList.remove('disabled-link');
+                paymentLink.style.pointerEvents = 'auto';
+              }
+            } else if (userRole === "LGU Client") {
+              console.log("LGU Client detected. No restrictions applied.");
+              const subscription = document.querySelector('a[href="subscription.html"]');
+              myContentsLink.classList.remove('disabled-link');
+              paymentLink.classList.remove('disabled-link');
+              subscription.style.display = 'none';
+              paymentLink.style.display = 'none';
+            }
+
+            // Update Subscribe buttons based on the current subscription
+            updateSubscribeButtons(userData.subscription);
+          } else {
+            console.error("User document does not exist.");
+          }
+        } catch (error) {
+          console.error("Error fetching user document:", error);
+        }
+      }
+
+      // Function to update Subscribe buttons based on the subscription
+      function updateSubscribeButtons(currentSubscription) {
+        const payPerPlayButton = document.getElementById('payPerPlayButton');
+        const payPerPlayCancelbtn = document.getElementById('payPerPlayCancelbtn');
+        const weeklyButton = document.getElementById('weeklyButton');
+        const weeklyCancelbtn = document.getElementById('weeklyCancelbtn');
+        const monthlyButton = document.getElementById('monthlyButton');
+        const monthlyCancelbtn = document.getElementById('monthlyCancelbtn');
+
+        // Once data is fetched, hide the loading spinner
+        document.getElementById('loadingSpinner').style.display = 'none';
+
+        // Show the main content
+        document.getElementById('mainContent').style.display = 'block';
+
+        // Reset button states
+        payPerPlayButton.classList.remove('d-none');
+        weeklyButton.classList.remove('d-none');
+        monthlyButton.classList.remove('d-none');
+        payPerPlayCancelbtn.classList.add('d-none');
+        weeklyCancelbtn.classList.add('d-none');
+        monthlyCancelbtn.classList.add('d-none');
+
+        // Disable buttons if there's an active subscription
+        const isSubscribed = currentSubscription !== '';
+
+        if (isSubscribed) {
+          if (currentSubscription === 'Pay per Day') {
+            payPerPlayButton.textContent = 'Subscribed'; // Change text to "Subscribed"
+            payPerPlayButton.disabled = true; // Disable Subscribe button
+            payPerPlayCancelbtn.classList.remove('d-none'); // Show Cancel button
+            weeklyButton.disabled = true; // Disable Subscribe button
+            monthlyButton.disabled = true; // Disable Subscribe button
+          } else if (currentSubscription === 'Weekly Plan') {
+            weeklyButton.textContent = 'Subscribed'; // Change text to "Subscribed"
+            weeklyButton.disabled = true; // Disable Subscribe button
+            weeklyCancelbtn.classList.remove('d-none'); // Show Cancel button
+            payPerPlayButton.disabled = true; // Disable Subscribe button
+            monthlyButton.disabled = true; // Disable Subscribe button
+          } else if (currentSubscription === 'Monthly Plan') {
+            monthlyButton.textContent = 'Subscribed'; // Change text to "Subscribed"
+            monthlyButton.disabled = true; // Disable Subscribe button
+            monthlyCancelbtn.classList.remove('d-none'); // Show Cancel button
+            payPerPlayButton.disabled = true; // Disable Subscribe button
+            weeklyButton.disabled = true; // Disable Subscribe button
+          }
+        } else {
+          // Enable buttons if there's no active subscription
+          payPerPlayButton.textContent = 'Subscribe'; // Reset to original text
+          weeklyButton.textContent = 'Subscribe'; // Reset to original text
+          monthlyButton.textContent = 'Subscribe'; // Reset to original text
+
+          payPerPlayButton.disabled = false;
+          weeklyButton.disabled = false;
+          monthlyButton.disabled = false;
+        }
+      }
+
+
+      // Function to display notifications for the current user
+      function displayNotifications(userId) {
+        const notificationsList = document.querySelector('.notifications');
+        const notificationsBadge = document.querySelector('.badge-number');
+        const dropdownHeader = document.querySelector('.dropdown-header');
+
+        const notificationsRef = collection(db, "NOTIFICATIONS", userId, "usernotif");
+
+        // Listen for real-time changes in the notifications collection
+        onSnapshot(notificationsRef, (snapshot) => {
+          console.log("Real-time updates for notifications");
+
+          // Clear only the notification items (preserve header and footer)
+          notificationsList.querySelectorAll('.notification-item').forEach(item => item.remove());
+
+          // Initialize notification count for all 'notified: false' notifications
+          let notificationCount = snapshot.docs.filter(doc => doc.data().notified === false).length;
+
+          // Collect all notifications in an array where 'notified' is false
+          const notificationsArray = snapshot.docs.map(doc => {
+            const notification = doc.data();
+
+            // Only process notifications where 'notified' is false
+            if (notification.notified === false) {
+              return {
+                id: doc.id,
+                ...notification
+              };
+            }
+            return null;
+          }).filter(notification => notification !== null);
+
+          // Sort notifications by timestamp in descending order (latest first)
+          notificationsArray.sort((a, b) => b.timestamp.seconds - a.timestamp.seconds);
+
+          // Limit the notifications to the first 2
+          const limitedNotifications = notificationsArray.slice(0, 2);
+
+          // Loop through the limited notifications and create the list items
+          limitedNotifications.forEach(notification => {
+            const { title, message, timestamp, type, id } = notification;
+
+            // Convert timestamp to date and time (e.g., Dec 10, 8:46 PM)
+            const timeAgo = new Date(timestamp.seconds * 1000).toLocaleDateString([], {
+              month: 'short', // 'short' will give abbreviated month (e.g., "Dec")
+              day: '2-digit'  // Two-digit day (e.g., "10")
+            }) + ' ' + new Date(timestamp.seconds * 1000).toLocaleTimeString([], {
+              hour: '2-digit',
+              minute: '2-digit',
+              hour12: true
+            });
+
+            // Create notification item
+            const notificationItem = document.createElement('li');
+            notificationItem.classList.add('notification-item');
+            notificationItem.innerHTML = `
+          <i class="bi bi-bell"></i>
+          <div>
+            <h4>${title}</h4>
+            <p>${message}</p>
+            <p>${timeAgo}</p>
+          </div>
+        `;
+
+            const notificationLine = document.createElement('li');
+            notificationLine.innerHTML = `
+          <hr class="dropdown-divider">
+        `;
+            // Append notification item to the list
+            notificationsList.appendChild(notificationItem);
+            notificationsList.appendChild(notificationLine);
+
+
+          });
+
+          // Update the badge count
+          notificationsBadge.textContent = notificationCount;
+
+          // Update the dropdown header with the notification count
+          dropdownHeader.innerHTML = `
+      You have <span class="badge rounded-pill bg-primary p-2 ms-2">${notificationCount}</span> unread notifications
+      <a href="notifications.html"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+    `;
+
+          // If no notifications, display a default message
+          if (notificationCount === 0) {
+            dropdownHeader.innerHTML = `
+      You have <span class="badge rounded-pill bg-primary p-2 ms-2">${notificationCount}</span> unread notifications
+      <a href="notifications.html"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+    `;
+          }
+        });
+      }
+
+      function loadPricingData() {
+        const pricingRef = collection(db, "PRICING");
+
+        onSnapshot(pricingRef, (snapshot) => {
+          snapshot.forEach(doc => {
+            const pricingData = doc.data();
+            const pricingId = doc.id;
+
+            if (pricingId === "payperday") {
+              const payPerDayPrice = pricingData.price;
+              const payPerDayPlan = pricingData.plan;
+              const payPerDayDetails = pricingData.plandetails;
+
+              document.getElementById("payPerDayPrice").textContent = `₱${payPerDayPrice}`;
+              document.getElementById("payPerPlayButton").dataset.price = payPerDayPrice;
+              document.getElementById("payPerPlayCancelbtn").dataset.price = payPerDayPrice;
+
+              const payPerDayDetailsList = document.getElementById("payPerDayDetails");
+              payPerDayDetailsList.innerHTML = "";
+              payPerDayDetails.forEach((detail, index) => {
+                const li = document.createElement("li");
+                li.innerHTML = `<i class="bi bi-check"></i> ${detail}`;
+                payPerDayDetailsList.appendChild(li);
+              });
+            } else if (pricingId === "weekly") {
+              const weeklyPrice = pricingData.price;
+              const weeklyPlan = pricingData.plan;
+              const weeklyDetails = pricingData.plandetails;
+
+              document.getElementById("weeklyPrice").textContent = `₱${weeklyPrice}`;
+              document.getElementById("weeklyButton").dataset.price = weeklyPrice;
+              document.getElementById("weeklyCancelbtn").dataset.price = weeklyPrice;
+
+              const weeklyDetailsList = document.getElementById("weeklyDetails");
+              weeklyDetailsList.innerHTML = "";
+              weeklyDetails.forEach((detail, index) => {
+                const li = document.createElement("li");
+                li.innerHTML = `<i class="bi bi-check"></i> ${detail}`;
+                weeklyDetailsList.appendChild(li);
+              });
+            } else if (pricingId === "monthly") {
+              const monthlyPrice = pricingData.price;
+              const monthlyPlan = pricingData.plan;
+              const monthlyDetails = pricingData.plandetails;
+
+              document.getElementById("monthlyPrice").textContent = `₱${monthlyPrice}`;
+              document.getElementById("monthlyButton").dataset.price = monthlyPrice;
+              document.getElementById("monthlyCancelbtn").dataset.price = monthlyPrice;
+
+              const monthlyDetailsList = document.getElementById("monthlyDetails");
+              monthlyDetailsList.innerHTML = "";
+              monthlyDetails.forEach((detail, index) => {
+                const li = document.createElement("li");
+                li.innerHTML = `<i class="bi bi-check"></i> ${detail}`;
+                monthlyDetailsList.appendChild(li);
+              });
+            }
+          });
+        }, (error) => {
+          console.error("Error fetching pricing data:", error);
+        });
+      }
+      // Check if the user is already logged in by looking into localStorage
+      let storedUserId = localStorage.getItem('userID');
+      console.log("Stored userID in localStorage:", storedUserId);
+
+      if (!storedUserId) {
+        console.log("No userID found in localStorage. Checking Firebase Authentication...");
+        onAuthStateChanged(auth, (user) => {
+          if (user) {
+            const userId = user.uid;
+            console.log("User is signed in with Firebase. userID:", userId);
+            localStorage.setItem('userID', userId);
+            console.log("userID saved to localStorage:", userId);
+            checkSubscription(userId);
+            displayNotifications(userId)
+            loadPricingData();
+          } else {
+            console.error("No user is signed in.");
+            window.location.href = 'login.html';
+          }
+        });
+      } else {
+        console.log("Using stored userID from localStorage for subscription check.");
+        checkSubscription(storedUserId);
+        displayNotifications(storedUserId);
+        loadPricingData();
+
+      }
+
+
+      // For updating the modal title and loading user data
+      const subscriptionModal = document.getElementById('subscriptionModal');
+      subscriptionModal.addEventListener('show.bs.modal', function (event) {
+        const button = event.relatedTarget;
+        const plan = button.getAttribute('data-plan');
+        const price = button.getAttribute('data-price');
+
+        const modalTitle = subscriptionModal.querySelector('.modal-title');
+        const form = subscriptionModal.querySelector('form');
+
+        // Set the modal title based on the plan
+        switch (plan) {
+          case 'Pay per Day':
+            modalTitle.textContent = 'Pay per Day Payment';
+            break;
+          case 'Weekly Plan':
+            modalTitle.textContent = 'Weekly Payment';
+            break;
+          case 'Monthly Plan':
+            modalTitle.textContent = 'Monthly Payment';
+            break;
+          default:
+            modalTitle.textContent = 'Subscription Payment';
+        }
+
+        // Load user data into the modal
+        const userId = localStorage.getItem('userID');
+        if (userId) {
+          loadUserData(userId);
+        }
+      });
+
+      // Function to load user data from Firestore
+      async function loadUserData(userId) {
+        try {
+          const userDocRef = doc(db, "CLIENTS", userId);
+          const userDoc = await getDoc(userDocRef);
+          if (userDoc.exists()) {
+            const userData = userDoc.data();
+            document.getElementById('firstname').value = userData.firstname || '';
+            document.getElementById('lastname').value = userData.lastname || '';
+            document.getElementById('email').value = userData.username || '';
+          } else {
+            console.error("User document does not exist.");
+          }
+        } catch (error) {
+          console.error("Error fetching user data:", error);
+        }
+      }
+
+      // For validations and restrictions
+      document.querySelectorAll('.subscribe-btn').forEach(function (button) {
+        button.addEventListener('click', function () {
+          const plan = this.getAttribute('data-plan');
+          const price = this.getAttribute('data-price');
+          document.getElementById('selectedPlan').value = plan;
+          document.getElementById('selectedPrice').value = price;
+
+          // Update the subscription display
+          const subscriptionDisplay = document.getElementById('subscriptionDisplay');
+          subscriptionDisplay.textContent = `Selected Plan: ${plan}`;
+        });
+      });
+
+      // Handle form submission: Save subscription and paystatus to Firestore
+      document.getElementById("modalOkayButton").addEventListener("click", function () {
+        var form = document.getElementById("subscriptionForm");
+
+        // Input fields
+        var firstName = document.getElementById("firstname");
+        var lastName = document.getElementById("lastname");
+        var email = document.getElementById("email");
+        var paymentSched = document.getElementById("paymentSched");
+        var check = document.getElementById("gridCheck");
+
+        // Payment validation
+        var paymentRadio1 = document.getElementById("gridRadios1"); // Walk-in
+        var paymentRadio2 = document.getElementById("gridRadios2"); // Pay Online
+        var paymentErrorMsg = paymentRadio1.closest('fieldset').querySelector('.invalid-feedback');
+
+        // Regular expression patterns
+        var namePattern = /^[A-Za-z ]+$/; // Only letters and spaces allowed
+        var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Basic email pattern
+
+        // Date validation
+        var today = new Date();
+        var todayMidnight = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+        var selectedDate = new Date(paymentSched.value);
+
+        // Check if any radio button is checked (payment option)
+        var isPaymentSelected = paymentRadio1.checked || paymentRadio2.checked;
+
+        // Initialize validation status
+        var isValid = true;
+
+        // Validate First Name
+        if (!namePattern.test(firstName.value)) {
+          firstName.classList.add('is-invalid');
+          isValid = false;
+        } else {
+          firstName.classList.remove('is-invalid');
+        }
+
+        // Validate Last Name
+        if (!namePattern.test(lastName.value)) {
+          lastName.classList.add('is-invalid');
+          isValid = false;
+        } else {
+          lastName.classList.remove('is-invalid');
+        }
+
+        // Validate Email
+        if (!emailPattern.test(email.value)) {
+          email.classList.add('is-invalid');
+          isValid = false;
+        } else {
+          email.classList.remove('is-invalid');
+        }
+
+        // Validate Payment Schedule (Date)
+        if (selectedDate <= todayMidnight || isNaN(selectedDate.getTime())) {
+          paymentSched.classList.add('is-invalid');
+          isValid = false;
+        } else {
+          paymentSched.classList.remove('is-invalid');
+        }
+
+        // Validate if a payment method is selected
+        if (!isPaymentSelected) {
+          paymentErrorMsg.style.display = 'block'; // Show error message for payment
+          isValid = false;
+        } else {
+          paymentErrorMsg.style.display = 'none'; // Hide if already selected
+        }
+
+        // Validate checkbox (agreement)
+        if (!check.checked) {
+          check.classList.add('is-invalid');
+          isValid = false;
+        } else {
+          check.classList.remove('is-invalid');
+        }
+
+        // If form is valid, proceed
+        if (isValid) {
+          var storedUserId = localStorage.getItem('userID');
+          var selectedPlan = document.getElementById('selectedPlan').value;
+          var paymentMode = paymentRadio1.checked ? "Walk-in" : "Online Payment";
+          var paystatus = "Pending";
+
+          if (storedUserId && selectedPlan) {
+            // Hide the subscription modal
+            var subscriptionModalEl = document.getElementById('subscriptionModal');
+            var subscriptionModal = bootstrap.Modal.getInstance(subscriptionModalEl);
+            subscriptionModal.hide();
+
+            // Save subscription to Firestore
+            saveSubscription(storedUserId, selectedPlan, paymentMode, paystatus);
+
+            // Check which payment method was selected
+            var confirmationMessage = document.getElementById("confirmationMessage");
+
+            if (paymentRadio1.checked) {
+              // Walk-in: Generate PDF and show confirmation modal
+              generatePDF();
+            } else if (paymentRadio2.checked) {
+              // Pay Online: Show success modal without PDF
+              confirmationMessage.innerHTML = "The form has been submitted. Thank you for your purchase.";
+            }
+
+            // Show the confirmation modal
+            var successModal = new bootstrap.Modal(document.getElementById('confirmationModal'));
+            successModal.show();
+          }
+        } else {
+          // If invalid, show form validation feedback
+          form.classList.add("was-validated");
+        }
+      });
+
+
+      // Initialize tooltips
+      const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+      tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+
+      // PDF generation on form submission (if needed)
+      document.getElementById("generatePDFButton").addEventListener("click", function () {
+        const pdfData = {
+          firstName: document.getElementById('firstname').value,
+          lastName: document.getElementById('lastname').value,
+          email: document.getElementById('email').value,
+          selectedPlan: document.getElementById('selectedPlan').value,
+          selectedPrice: document.getElementById('selectedPrice').value
+        };
+        generatePDF(pdfData);
+      });
+
+
+      function generatePDF() {
+        const { jsPDF } = window.jspdf;
+        const doc = new jsPDF('p', 'mm', 'letter');
+
+        // Fetch the base64-encoded font data for both regular and bold fonts
+        const fetchRegularFont = fetch('../NotoSans-Regular.txt').then(response => response.text());
+        const fetchBoldFont = fetch('../NotoSans-Bold.txt').then(response => response.text());
+
+        // Wait for both font files to load
+        Promise.all([fetchRegularFont, fetchBoldFont])
+          .then(([regularFontData, boldFontData]) => {
+            // Add the regular font data to jsPDF
+            doc.addFileToVFS("NotoSans-Regular.ttf", regularFontData);
+            doc.addFont("NotoSans-Regular.ttf", "NotoSans-Regular", "normal");
+
+            // Add the bold font data to jsPDF
+            doc.addFileToVFS("NotoSans-Bold.ttf", boldFontData);
+            doc.addFont("NotoSans-Bold.ttf", "NotoSans", "bold");
+
+            // Use NotoSans-Regular for normal text and NotoSans-Bold for titles
+            doc.setFont("NotoSans-Regular", "normal");
+
+            // Fetch form data
+            const firstname = document.getElementById('firstname').value;
+            const lastname = document.getElementById('lastname').value;
+            const email = document.getElementById('email').value;
+            const paymentSched = document.getElementById('paymentSched').value;
+            const paymentMethod = document.querySelector('input[name="gridRadios"]:checked').value;
+
+            // Fetch selected plan and price
+            const plan = document.getElementById('selectedPlan').value;
+            const price = document.getElementById('selectedPrice').value;
+
+            // Add header and company details
+            doc.setFont("NotoSans", "bold"); // Set font to bold for title
+            doc.setFontSize(18);
+            doc.text("San Vicente's Path to Tourism: VisPro", doc.internal.pageSize.getWidth() / 2, 20, { align: "center" });
+
+            doc.setFont("NotoSans", "normal"); // Set font to regular for body text
+            doc.setFontSize(14);
+            doc.text("Subscription Request Form", doc.internal.pageSize.getWidth() / 2, 28, { align: "center" });
+
+            // Address or other company details
+            doc.setFontSize(11);
+            doc.text("Address: 4V4F+J6F, Tandang Sora Street, Barangay Silangan, San Vicente, Camarines Norte", 10, 45);
+            doc.text("Contact: sanvicente@gmail.com", 10, 50);
+
+            // Add a separator line
+            doc.setLineWidth(0.5);
+            doc.line(10, 55, 200, 55);
+
+            // Add Date
+            const currentDate = new Date().toLocaleDateString();
+            doc.setFontSize(12);
+            doc.text("Date: " + currentDate, 150, 65); // Date in top-right corner
+
+            // Prepare table data
+            const tableBody = [
+              ['Name:', firstname + " " + lastname],
+              ['Email:', email],
+              ['Subscription Plan:', plan],
+              ['Subscription Price', "₱" + price],
+              ['Payment Schedule:', paymentSched],
+              ['Payment Method:', paymentMethod]
+            ];
+
+            // Add the table
+            doc.autoTable({
+              startY: 75,
+              theme: 'grid',
+              body: tableBody,
+              styles: {
+                fontSize: 12,
+                overflow: "linebreak",
+                textColor: [0, 0, 0],
+                font: "NotoSans-Regular",
+                lineColor: [0, 0, 0], // Black gridlines
+                lineWidth: 0.2,
+              },
+              headStyles: {
+                fillColor: [255, 255, 255], // White header background
+                font: "NotoSans",  // Use NotoSans for the header
+                fontStyle: "bold", // Apply bold style to the header
+              },
+            });
+
+            // Add formal closing note and signature section
+            doc.setFont("NotoSans", "italic");
+            doc.setFontSize(10);
+            doc.text("Note: Kindly present this form at the Treasury's office on the scheduled date. Your subscription will be processed accordingly.", doc.internal.pageSize.getWidth() / 2, doc.lastAutoTable.finalY + 15, { align: "center" });
+            doc.setFont("NotoSans", "normal");
+            doc.setFontSize(12);
+            doc.text("________________________", 25, doc.lastAutoTable.finalY + 50);  // Signature line
+            doc.text("Subscriber's Signature", 25, doc.lastAutoTable.finalY + 55);  // Label for signature line
+
+            // Save the PDF
+            doc.save('Vispro-Subscription-Request.pdf');
+          })
+          .catch(error => {
+            alert("Error loading fonts: " + error.message);
+          });
+      }
+
+
+    });
+
+    // Initialize  tooltips
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+
+    // Clear form when modal is shown
+    document.getElementById('subscriptionModal').addEventListener('show.bs.modal', function () {
+      var form = document.getElementById('subscriptionForm');
+      form.reset();  // This clears the form
+      form.classList.remove("was-validated"); // Reset validation state
+      paymentSched.classList.remove('is-invalid'); // Remove is-invalid class
+      paymentErrorMsg.classList.add('d-none'); // Hide error message
+
+    });
+
+    // Function to update subscription in Firestore
+    async function saveSubscription(userId, subscriptionPlan, paymentMode, paystatus) {
+      try {
+        const userDocRef = doc(db, "CLIENTS", userId);
+        await updateDoc(userDocRef, {
+          subscription: subscriptionPlan,
+          paystatus: paystatus,
+          paymentMode: paymentMode // Add payment mode to the Firestore document
+        });
+        console.log("Subscription and paystatus updated successfully.");
+      } catch (error) {
+        console.error("Error updating subscription:", error);
+      }
+    }
+
+    // Storing the selected subscription plan
+    document.addEventListener('DOMContentLoaded', function () {
+      const breadcrumb = document.querySelector('.breadcrumb .active');
+      const subscribeButtons = document.querySelectorAll('button[data-bs-toggle="modal"]');
+      let selectedPlan = '';
+      let paymentMode = ''; // Variable to store payment mode
+      let paystatus = ''; // Variable to store payment status
+
+      subscribeButtons.forEach(button => {
+        button.addEventListener('click', function () {
+          selectedPlan = this.dataset.plan;
+
+          // When the button is clicked, also render the PayPal buttons if "Pay Online" is selected
+          const price = this.getAttribute('data-price').replace('₱', ''); // Remove Peso sign if applicable
+          const paypalButtonContainer = document.getElementById('paypal-button-container');
+          const radioWalkIn = document.getElementById('gridRadios1');
+          const radioOnline = document.getElementById('gridRadios2');
+          const paymentSched = document.getElementById('paymentSched');
+
+          // Reset PayPal button container for rendering
+          paypalButtonContainer.innerHTML = '';
+          paypalButtonContainer.style.display = 'none'; // Hide by default
+
+          // Reset Payment Schedule visibility
+          paymentSched.closest('.col-md-6').style.display = 'block'; // Show by default
+
+          // Event listeners for radio buttons
+          radioWalkIn.addEventListener('change', function () {
+            if (this.checked) {
+              paypalButtonContainer.style.display = 'none'; // Hide PayPal buttons for Walk-in
+              paymentSched.closest('.col-md-6').style.display = 'block'; // Show payment schedule for Walk-in
+              paymentMode = "Walk-in"; // Set payment mode to Walk-in
+            }
+          });
+
+          radioOnline.addEventListener('change', function () {
+            if (this.checked) {
+              paypalButtonContainer.style.display = 'block'; // Show PayPal buttons for Online
+              paymentSched.closest('.col-md-6').style.display = 'none'; // Hide payment schedule for Online
+              paymentMode = "Online Payment";
+              paystatus = "Paid" // Set payment mode to Online Payment
+
+
+              // Render PayPal buttons when the "Pay Online" option is selected
+              try {
+                paypal.Buttons({
+                  createOrder: function (data, actions) {
+                    // Create an order with PayPal and set the purchase amount
+                    return actions.order.create({
+                      purchase_units: [{
+                        amount: {
+                          value: price, // Use selected price here
+                        },
+                        description: selectedPlan, // Use selected plan here
+                      }],
+                      application_context: {
+                        shipping_preference: "NO_SHIPPING" // No shipping needed
+                      }
+                    });
+                  },
+                  onApprove: function (data, actions) {
+                    // Capture the funds from the transaction
+                    return actions.order.capture().then(function (details) {
+                      // Get userId (assuming you have it stored somewhere, like in localStorage)
+                      const userId = localStorage.getItem('userID'); // Or use the method you retrieve userId
+
+                      console.log("UserID:", userId);
+                      console.log("Selected Plan:", selectedPlan);
+                      console.log("Payment Mode:", paymentMode);
+
+                      // Save subscription in Firestore
+                      saveSubscription(userId, selectedPlan, paymentMode, paystatus); // Pass paymentMode to saveSubscription
+
+                      // Customize the confirmation modal with the plan and payer name
+                      const confirmationModal = new bootstrap.Modal(document.getElementById('confirmationModal'));
+                      const confirmationMessage = document.getElementById('confirmationMessage');
+                      const confirmationModalTitle = document.getElementById('confirmationModalLabel');
+
+                      // Set the title and message dynamically
+                      confirmationModalTitle.textContent = "Selected Plan Online Payment";
+                      confirmationMessage.textContent = `Congratulations!, you have successfully paid for the subscription plan.`;
+
+                      // Dismiss the subscription modal
+                      const subscriptionModal = bootstrap.Modal.getInstance(document.getElementById('subscriptionModal'));
+                      subscriptionModal.hide();
+
+                      // Show the confirmation modal
+                      confirmationModal.show();
+                    });
+                  },
+                  onCancel: function (data) {
+                    alert('Payment was canceled');
+                  },
+                  onError: function (err) {
+                    console.error('PayPal error: ', err);
+                    alert('An error occurred during the payment process');
+                  }
+                }).render('#paypal-button-container'); // Render PayPal buttons in the container
+                console.log('PayPal buttons rendered successfully');
+              } catch (error) {
+                console.error('Error rendering PayPal buttons:', error);
+              }
+            }
+          });
+        });
+      });
+
+
+
+
+
+      document.getElementById('confimationBtn').addEventListener('click', function () {
+        // Refresh the page
+        location.reload();
+        // // if (selectedPlan) {
+        // //   // Update breadcrumb
+        // //   breadcrumb.textContent = `Subscription: ${selectedPlan}`;
+
+        // //   // Update Subscribe buttons to Cancel and change their text
+        // //   subscribeButtons.forEach(button => {
+        // //     if (button.dataset.plan === selectedPlan) {
+        // //       if (button.dataset.plan === 'Pay per Day') {
+        // //         document.getElementById('payPerPlayButton').classList.add('d-none');
+        // //         document.getElementById('payPerPlayButton').textContent = 'Subscribed'; // Change text to "Subscribed"
+        // //         document.getElementById('payPerPlayCancelbtn').classList.remove('d-none');
+
+        // //         document.getElementById('weeklyButton').setAttribute('disabled', true);
+        // //         document.getElementById('monthlyButton').setAttribute('disabled', true);
+        // //       } else if (button.dataset.plan === 'Weekly Plan') {
+        // //         document.getElementById('weeklyButton').classList.add('d-none');
+        // //         document.getElementById('weeklyButton').textContent = 'Subscribed'; // Change text to "Subscribed"
+        // //         document.getElementById('weeklyCancelbtn').classList.remove('d-none');
+
+        // //         document.getElementById('payPerPlayButton').setAttribute('disabled', true);
+        // //         document.getElementById('monthlyButton').setAttribute('disabled', true);
+        // //       } else if (button.dataset.plan === 'Monthly Plan') {
+        // //         document.getElementById('monthlyButton').classList.add('d-none');
+        // //         document.getElementById('monthlyButton').textContent = 'Subscribed'; // Change text to "Subscribed"
+        // //         document.getElementById('monthlyCancelbtn').classList.remove('d-none');
+
+        // //         document.getElementById('payPerPlayButton').setAttribute('disabled', true);
+        // //         document.getElementById('weeklyButton').setAttribute('disabled', true);
+        // //       }
+        // //     }
+        // //   });
+        // }
+      });
+
+      // Cancel button logic
+      document.getElementById('modalCancelButton').addEventListener('click', async function () {
+        // if (selectedPlan) {
+        //   // Update breadcrumb
+        //   breadcrumb.textContent = `Subscription: No Subscriptions Yet`;
+
+        //   // Update Subscribe buttons to Subscribe
+        //   subscribeButtons.forEach(button => {
+        //     if (button.dataset.plan === selectedPlan) {
+        //       if (button.dataset.plan === 'Cancel Pay per Day') {
+        //         document.getElementById('payPerPlayButton').classList.remove('d-none');
+        //         document.getElementById('payPerPlayButton').textContent = 'Subscribe';
+        //         document.getElementById('payPerPlayCancelbtn').classList.add('d-none');
+
+        //         document.getElementById('weeklyButton').disabled = false;
+        //         document.getElementById('monthlyButton').disabled = false;
+        //       } else if (button.dataset.plan === 'Cancel Weekly Plan') {
+        //         document.getElementById('weeklyButton').classList.remove('d-none');
+        //         document.getElementById('weeklyButton').textContent = 'Subscribe';
+        //         document.getElementById('weeklyCancelbtn').classList.add('d-none');
+
+        //         document.getElementById('payPerPlayButton').disabled = false;
+        //         document.getElementById('monthlyButton').disabled = false;
+        //       } else if (button.dataset.plan === 'Cancel Monthly Plan') {
+        //         document.getElementById('monthlyButton').classList.remove('d-none');
+        //         document.getElementById('monthlyButton').textContent = 'Subscribe';
+        //         document.getElementById('monthlyCancelbtn').classList.add('d-none');
+
+        //         document.getElementById('payPerPlayButton').disabled = false;
+        //         document.getElementById('weeklyButton').disabled = false;
+        //       }
+        //     }
+        //   });
+
+        // Get the current user's userID
+        const currentUserId = localStorage.getItem('userID');
+
+        try {
+          // Check if the CONTENTS document exists
+          const contentsRef = doc(db, 'CONTENTS', currentUserId);
+          const contentsDoc = await getDoc(contentsRef);
+
+          if (contentsDoc.exists()) {
+            // User exists in CONTENTS, delete their files
+            await deleteDoc(contentsRef);
+            console.log("User files deleted from CONTENTS.");
+          } else {
+            console.log("CONTENTS collection does not exist for this user.");
+          }
+
+          // Update the CLIENTS collection
+          const clientsRef = doc(db, 'CLIENTS', currentUserId);
+          await updateDoc(clientsRef, {
+            subscription: "",
+            paystatus: "",
+            paymentMode: ""
+          });
+          console.log("Subscription and paystatus updated for user in CLIENTS.");
+          // Refresh the page
+          location.reload();
+        } catch (error) {
+          console.error("Error updating CLIENTS collection or deleting CONTENTS:", error);
+        }
+        // }
+      });
+    });
+
+  </script>
+
+</body>
+
+</html>
